@@ -104,11 +104,11 @@ body {
     --message-hover: hsla(230, 0%, 0%, 0.1); /* messages when hovered */
 
     /* accent colors */
-    --accent-1: var(--purple-1); /* links and other accent text */
-    --accent-2: var(--purple-2); /* small accent elements */
-    --accent-3: var(--purple-3); /* accent buttons */
-    --accent-4: var(--purple-4); /* accent buttons when hovered */
-    --accent-5: var(--purple-5); /* accent buttons when clicked */
+    --accent-1: var(--green-1); /* links and other accent text */
+    --accent-2: var(--green-2); /* small accent elements */
+    --accent-3: var(--green-3); /* accent buttons */
+    --accent-4: var(--green-4); /* accent buttons when hovered */
+    --accent-5: var(--green-5); /* accent buttons when clicked */
     --accent-new: var(--accent-2); /* stuff that's normally red like mute/deafen buttons */
     --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
     --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
@@ -129,23 +129,47 @@ body {
     --button-border: hsl(230, 0%, 100%, 0.1); /* neutral border color of buttons */
 
     /* base colors */
+    --rosewater-1: hsl(10deg, 58%, 95%);
+    --rosewater-2: hsl(10deg, 58%, 90%);
+    --rosewater-3: hsl(10deg, 58%, 90%);
+    --rosewater-4: hsl(10deg, 58%, 85%);
+    --rosewater-5: hsl(10deg, 58%, 80%);
+
+    --flamingo-1: hsl(0deg, 58%, 91%);
+    --flamingo-2: hsl(0deg, 58%, 86%);
+    --flamingo-3: hsl(0deg, 58%, 86%);
+    --flamingo-4: hsl(0deg, 58%, 81%);
+    --flamingo-5: hsl(0deg, 58%, 76%);
+
+    --pink-1: hsl(316deg, 74%, 90%);
+    --pink-2: hsl(316deg, 74%, 85%);
+    --pink-3: hsl(316deg, 74%, 85%);
+    --pink-4: hsl(316deg, 74%, 80%);
+    --pink-5: hsl(316deg, 74%, 75%);
+
+    --purple-1: hsl(267deg, 83%, 85%);
+    --purple-2: hsl(267deg, 83%, 80%);
+    --purple-3: hsl(267deg, 83%, 80%);
+    --purple-4: hsl(267deg, 83%, 75%);
+    --purple-5: hsl(267deg, 83%, 70%);
+
     --red-1: hsl(351deg, 74%, 78%);
     --red-2: hsl(351deg, 74%, 73%);
     --red-3: hsl(351deg, 74%, 73%);
     --red-4: hsl(351deg, 74%, 68%);
     --red-5: hsl(351deg, 74%, 63%);
 
-    --green-1: hsl(105deg, 48%, 77%);
-    --green-2: hsl(105deg, 48%, 72%);
-    --green-3: hsl(105deg, 48%, 72%);
-    --green-4: hsl(105deg, 48%, 67%);
-    --green-5: hsl(105deg, 48%, 62%);
+    --maroon-1: hsl(355deg, 71%, 82%);
+    --maroon-2: hsl(355deg, 71%, 77%);
+    --maroon-3: hsl(355deg, 71%, 77%);
+    --maroon-4: hsl(355deg, 71%, 72%);
+    --maroon-5: hsl(355deg, 71%, 67%);
 
-    --blue-1: hsl(199deg, 66%, 74%);
-    --blue-2: hsl(199deg, 66%, 69%);
-    --blue-3: hsl(199deg, 66%, 69%);
-    --blue-4: hsl(199deg, 66%, 64%);
-    --blue-5: hsl(199deg, 66%, 59%);
+    --peach-1: hsl(21deg, 86%, 78%);
+    --peach-2: hsl(21deg, 86%, 73%);
+    --peach-3: hsl(21deg, 86%, 73%);
+    --peach-4: hsl(21deg, 86%, 68%);
+    --peach-5: hsl(21deg, 86%, 63%);
 
     --yellow-1: hsl(40deg, 70%, 83%);
     --yellow-2: hsl(40deg, 70%, 78%);
@@ -153,9 +177,39 @@ body {
     --yellow-4: hsl(40deg, 70%, 73%);
     --yellow-5: hsl(40deg, 70%, 68%);
 
-    --purple-1: hsl(267deg, 83%, 85%);
-    --purple-2: hsl(267deg, 83%, 80%);
-    --purple-3: hsl(267deg, 83%, 80%);
-    --purple-4: hsl(267deg, 83%, 75%);
-    --purple-5: hsl(267deg, 83%, 70%);
+    --green-1: hsl(105deg, 48%, 77%);
+    --green-2: hsl(105deg, 48%, 72%);
+    --green-3: hsl(105deg, 48%, 72%);
+    --green-4: hsl(105deg, 48%, 67%);
+    --green-5: hsl(105deg, 48%, 62%);
+
+    --teal-1: hsl(171deg, 47%, 74%);
+    --teal-2: hsl(171deg, 47%, 69%);
+    --teal-3: hsl(171deg, 47%, 69%);
+    --teal-4: hsl(171deg, 47%, 64%);
+    --teal-5: hsl(171deg, 47%, 59%);
+
+    --sky-1: hsl(189deg, 59%, 78%);
+    --sky-2: hsl(189deg, 59%, 73%);
+    --sky-3: hsl(189deg, 59%, 73%);
+    --sky-4: hsl(189deg, 59%, 68%);
+    --sky-5: hsl(189deg, 59%, 63%);
+
+    --sapphire-1: hsl(199deg, 66%, 74%);
+    --sapphire-2: hsl(199deg, 66%, 69%);
+    --sapphire-3: hsl(199deg, 66%, 69%);
+    --sapphire-4: hsl(199deg, 66%, 64%);
+    --sapphire-5: hsl(199deg, 66%, 59%);
+
+    --blue-1: hsl(220deg, 83%, 80%);
+    --blue-2: hsl(220deg, 83%, 75%);
+    --blue-3: hsl(220deg, 83%, 75%);
+    --blue-4: hsl(220deg, 83%, 70%);
+    --blue-5: hsl(220deg, 83%, 65%);
+
+    --lavender-1: hsl(234deg, 82%, 90%);
+    --lavender-2: hsl(234deg, 82%, 85%);
+    --lavender-3: hsl(234deg, 82%, 85%);
+    --lavender-4: hsl(234deg, 82%, 80%);
+    --lavender-5: hsl(234deg, 82%, 75%);
 }
